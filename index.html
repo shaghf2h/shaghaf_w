@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>غيث ❤️</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Tahoma, sans-serif;
+    background:linear-gradient(135deg,#ff9ecf,#ffd6e8);
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.box{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 0 20px rgba(0,0,0,.2);
+}
+
+h1{
+    color:#ff4081;
+    margin-bottom:20px;
+}
+
+button{
+    background:#ff4081;
+    color:white;
+    border:none;
+    padding:15px 35px;
+    font-size:20px;
+    border-radius:15px;
+    cursor:pointer;
+}
+
+video{
+    width:90%;
+    max-width:500px;
+    border-radius:15px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="box" id="question">
+    <h1>غيث تعرف ليش أحبك؟ ❤️</h1>
+    <button onclick="showVideo()">إي؟</button>
+</div>
+
+<div id="videoBox" style="display:none;">
+    <video controls autoplay>
+        <source src="13259.mp4" type="video/mp4">
+    </video>
+</div>
+
+<script>
+function showVideo(){
+    document.getElementById("question").style.display="none";
+    document.getElementById("videoBox").style.display="block";
+}
+</script>
+
+</body>
+</html>
